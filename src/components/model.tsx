@@ -5,6 +5,8 @@ import { Center, useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
+useGLTF.preload("/models/orchidglb.glb");
+
 export default function Model() {
   // make sure the file is here: public/models/orchid.glb
   const { scene } = useGLTF("/models/orchidglb.glb");
