@@ -31,7 +31,7 @@ const ContactForm: React.FC = () => {
       <ScrollReveal delay={0.2}>
         <motion.form
           onSubmit={handleSubmit}
-          className="max-w-2xl mx-auto bg-gray-900 p-8 rounded-xl space-y-6 shadow-lg hover:shadow-[var(--accent)]/20 transition-all"
+          className="max-w-2xl mx-auto bg-zinc-900 p-8 rounded-xl space-y-6 shadow-lg hover:shadow-[var(--accent)]/20 transition-all"
         >
           <input
             type="text"
@@ -39,7 +39,7 @@ const ContactForm: React.FC = () => {
             placeholder="your name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full p-3 bg-gray-800 rounded-lg outline-none focus:ring-2 focus:ring-[var(--accent)]"
+            className="w-full p-3 bg-zinc-800 rounded-lg outline-none focus:ring-2 focus:ring-[var(--accent)]"
           />
           <input
             type="email"
@@ -47,7 +47,7 @@ const ContactForm: React.FC = () => {
             placeholder="your email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full p-3 bg-gray-800 rounded-lg outline-none focus:ring-2 focus:ring-[var(--accent)]"
+            className="w-full p-3 bg-zinc-800 rounded-lg outline-none focus:ring-2 focus:ring-[var(--accent)]"
           />
           <textarea
             name="message"
@@ -55,13 +55,13 @@ const ContactForm: React.FC = () => {
             rows={5}
             value={formData.message}
             onChange={handleChange}
-            className="w-full p-3 bg-gray-800 rounded-lg outline-none focus:ring-2 focus:ring-[var(--accent)]"
+            className="w-full p-3 bg-zinc-800 rounded-lg outline-none focus:ring-2 focus:ring-[var(--accent)]"
           />
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             type="submit"
-            className="w-full py-3 bg-[#c8a2c8] text-black font-semibold rounded-lg hover:bg-[var(--accent)] transition-all"
+            className="w-full py-3 bg-[#c8a2c8] text-black font-semibold rounded-lg hover:bg-[#c8a2c8] transition-all"
           >
             send message
           </motion.button>

@@ -8,9 +8,10 @@ const Hero: React.FC = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-black text-white px-8 md:px-16 overflow-hidden"
+      className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-black text-white px-8 md:px-16 overflow-hidden pt-32 md:pt-0"
+      // ↑ pt-32 adds top padding to avoid overlap with fixed navbar
     >
-      {/* left side */}
+      {/* Left Side */}
       <motion.div
         initial={{ opacity: 0, x: -40 }}
         animate={{ opacity: 1, x: 0 }}
@@ -22,7 +23,7 @@ const Hero: React.FC = () => {
         </h1>
 
         <h2 className="text-2xl md:text-3xl text-gray-300">
-        // a junior <span className="text-[#c8a2c8]">computer science major</span> at the university of florida.
+          // a junior <span className="text-[#c8a2c8]">computer science major</span> at the university of florida.
         </h2>
 
         <p className="text-gray-400 max-w-lg mx-auto md:mx-0">
@@ -39,14 +40,14 @@ const Hero: React.FC = () => {
           <a
             href="#contact"
             className="px-6 py-3 border font-semibold rounded-lg transition-all
-                       border-[#c8a2c8] text-[#c8a2c8] hover:bg-[#c8a2c8] hover:text-black"
+                     border-[#c8a2c8] text-[#c8a2c8] hover:bg-[#c8a2c8] hover:text-black"
           >
             contact me
           </a>
         </div>
       </motion.div>
 
-      {/* right side */}
+      {/* Right Side - 3D Model */}
       <motion.div
         initial={{ opacity: 0, scale: 0.98 }}
         animate={{ opacity: 1, scale: 1 }}
