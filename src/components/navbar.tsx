@@ -14,19 +14,19 @@ const Navbar: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
         {/* Replace your name or logo here */}
-        <Link href="/" className="text-2xl font-bold text-[#04D9FF]">
+        <Link href="/" className="text-2xl font-bold text-[#c8a2c8]">
           lynette
         </Link>
 
         {/* Update the links below to match your sections */}
         <div className="flex space-x-8 text-gray-300 font-medium">
-          <Link href="#hero" className="hover:text-[#04D9FF] transition-all">
+          <Link href="#hero" className="hover:text-[#c8a2c8] transition-all">
             home
           </Link>
-          <Link href="#projects" className="hover:text-[#04D9FF] transition-all">
+          <Link href="#projects" className="hover:text-[#c8a2c8] transition-all">
             projects
           </Link>
-          <Link href="#contact" className="hover:text-[#04D9FF] transition-all">
+          <Link href="#contact" className="hover:text-[#c8a2c8] transition-all">
             contact
           </Link>
         </div>

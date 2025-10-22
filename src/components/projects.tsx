@@ -61,7 +61,7 @@ const Projects: React.FC = () => {
     <section id="projects" className="min-h-screen bg-black text-white px-8 md:px-16 py-24">
       <ScrollReveal>
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-          My <span className="text-[#04D9FF]">Projects</span>
+          // my <span className="text-[#c8a2c8]">projects</span>
         </h2>
       </ScrollReveal>
 
@@ -71,7 +71,7 @@ const Projects: React.FC = () => {
             <motion.div
               whileHover={{ scale: 1.03 }}
               transition={{ duration: 0.3 }}
-              className="bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-[#04D9FF]/20 transition-all"
+              className="bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-[#c8a2c8]/20 transition-all"
             >
               <Image
                 src={project.image}
@@ -87,7 +87,7 @@ const Projects: React.FC = () => {
                 <a
                   href={project.link}
                   target="_blank"
-                  className="inline-block mt-4 text-[#04D9FF] hover:underline"
+                  className="inline-block mt-4 text-[#c8a2c8] hover:underline"
                 >
                   View Project →
                 </a>

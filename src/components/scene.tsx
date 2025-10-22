@@ -11,7 +11,7 @@ export default function Scene() {
   return (
     <div className="w-full h-[600px] md:h-[700px]">
       <Canvas
-  camera={{ position: [1.0, 1.3, 5.5], fov: 40, near: 0.1, far: 100 }}
+  camera={{ position: [1.0, 1.3, 5.5], fov: 40, near: 0.1, far: 90 }}
   style={{ background: "transparent" }}
 >
         {/* bright, soft “studio” lighting */}

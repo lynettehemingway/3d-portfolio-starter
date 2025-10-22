@@ -43,7 +43,7 @@ export default function Model() {
     // Center auto-centers and fits the model so it won’t be tiny or offscreen
     <Center ref={ref} disableY top={false}>
       {/* scale controls “how big in the hero” — start large and tweak */}
-    <primitive object={scene} scale={1.33} position={[-.1, -.9, .1]} />
+    <primitive object={scene} scale={2.5} position={[0, -1.5, .1]} />
     </Center>
   );
 }

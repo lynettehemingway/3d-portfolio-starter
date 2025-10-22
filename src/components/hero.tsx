@@ -10,59 +10,52 @@ const Hero: React.FC = () => {
       id="hero"
       className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-black text-white px-8 md:px-16 overflow-hidden"
     >
-      {/* ===================== LEFT SIDE: TEXT ===================== */}
+      {/* left side */}
       <motion.div
         initial={{ opacity: 0, x: -40 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         className="flex-1 space-y-6 text-center md:text-left"
       >
-        {/* Replace your name here */}
         <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-          hi, i’m <span className="text-[#04D9FF]">lynette</span>
+          hi, i’m <span className="text-[#c8a2c8]">lynette</span>
         </h1>
 
-        {/* Replace your role or title here */}
         <h2 className="text-2xl md:text-3xl text-gray-300">
-          third year <span className="text-[#04D9FF]">computer science major @ uf</span>
+        // a junior <span className="text-[#c8a2c8]">computer science major</span> at the university of florida.
         </h2>
 
-        {/* Replace this text with your short bio or tagline */}
         <p className="text-gray-400 max-w-lg mx-auto md:mx-0">
-          I build visually stunning web experiences using Next.js, TypeScript, and Three.js.
+          currently working towards a minor in DAS and a certificate in GIS.
         </p>
 
-        {/* Customize your buttons and links here */}
         <div className="flex justify-center md:justify-start space-x-6 pt-6">
           <a
             href="#projects"
-            className="px-6 py-3 bg-[#04D9FF] text-black font-semibold rounded-lg hover:bg-[#00BFFF] transition-all"
+            className="px-6 py-3 bg-[#c8a2c8] text-black font-semibold rounded-lg hover:opacity-85 transition-all"
           >
-            View My Work
+            view my work
           </a>
           <a
             href="#contact"
-            className="px-6 py-3 border border-[#04D9FF] text-[#04D9FF] font-semibold rounded-lg hover:bg-[#04D9FF] hover:text-black transition-all"
+            className="px-6 py-3 border font-semibold rounded-lg transition-all
+                       border-[#c8a2c8] text-[#c8a2c8] hover:bg-[#c8a2c8] hover:text-black"
           >
-            Contact Me
+            contact me
           </a>
         </div>
       </motion.div>
 
-      {/* ===================== RIGHT SIDE: 3D MODEL ===================== */}
-    <motion.div
-      initial={{ opacity: 0, scale: 0.98 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ delay: 0.3, duration: 0.8 }}
-      className="flex-1 relative flex justify-center items-center"
-      style={{
-        width: "100%",
-        height: "600px",
-        overflow: "visible",        // ← no clipping
-      }}
-    >
-  <Scene /> 
-</motion.div>
+      {/* right side */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.98 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.3, duration: 0.8 }}
+        className="flex-1 relative flex justify-center items-center"
+        style={{ width: "100%", height: "600px", overflow: "visible" }}
+      >
+        <Scene />
+      </motion.div>
     </section>
   );
 };
