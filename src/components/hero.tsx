@@ -19,12 +19,12 @@ const Hero: React.FC = () => {
       >
         {/* Replace your name here */}
         <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-          Hi, I’m <span className="text-[#04D9FF]">Your Name</span>
+          hi, i’m <span className="text-[#04D9FF]">lynette</span>
         </h1>
 
         {/* Replace your role or title here */}
         <h2 className="text-2xl md:text-3xl text-gray-300">
-          A Creative <span className="text-[#04D9FF]">Developer</span>
+          third year <span className="text-[#04D9FF]">computer science major @ uf</span>
         </h2>
 
         {/* Replace this text with your short bio or tagline */}
@@ -50,14 +50,19 @@ const Hero: React.FC = () => {
       </motion.div>
 
       {/* ===================== RIGHT SIDE: 3D MODEL ===================== */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 0.4, duration: 1 }}
-        className="flex-1 flex justify-center items-center"
-      >
-        <Scene />
-      </motion.div>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.98 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ delay: 0.3, duration: 0.8 }}
+      className="flex-1 relative flex justify-center items-center"
+      style={{
+        width: "100%",
+        height: "600px",
+        overflow: "visible",        // ← no clipping
+      }}
+    >
+  <Scene /> 
+</motion.div>
     </section>
   );
 };

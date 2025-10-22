@@ -2,36 +2,30 @@
 
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-import { motion } from "framer-motion";
+import { OrbitControls, Environment } from "@react-three/drei";
 import dynamic from "next/dynamic";
 
-// Lazy-load the model to improve performance
 const Model = dynamic(() => import("./model"), { ssr: false });
 
-const Scene: React.FC = () => {
+export default function Scene() {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.2 }}
-      className="w-full h-[600px] md:h-[700px] flex items-center justify-center"
-    >
-      <Canvas camera={{ position: [5, 2, 8], fov: 50 }}>
-        {/* This light setup makes your 3D model visible and gives it depth */}
-        <ambientLight intensity={0.5} />
-        <directionalLight position={[5, 5, 5]} intensity={2} />
+    <div className="w-full h-[600px] md:h-[700px]">
+      <Canvas
+  camera={{ position: [1.0, 1.3, 5.5], fov: 40, near: 0.1, far: 100 }}
+  style={{ background: "transparent" }}
+>
+        {/* bright, soft “studio” lighting */}
+        <ambientLight intensity={3.5} />
+        <directionalLight position={[3, 4, 5]} intensity={4} />
+        <pointLight position={[0, 1, 2]} intensity={5} />
+        <Environment preset="studio" intensity={1.2} />
 
-        {/* Load your 3D model here */}
         <Suspense fallback={null}>
           <Model />
         </Suspense>
 
-        {/* Lets you drag to rotate your model (zoom disabled for cleaner look) */}
-        <OrbitControls enableZoom={false} />
+        <OrbitControls enableZoom={false} enablePan={false} />
       </Canvas>
-    </motion.div>
+    </div>
   );
-};
-
-export default Scene;
+}
