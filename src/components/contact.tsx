@@ -36,7 +36,7 @@ const ContactForm: React.FC = () => {
           <input
             type="text"
             name="name"
-            placeholder="Your Name"
+            placeholder="your name"
             value={formData.name}
             onChange={handleChange}
             className="w-full p-3 bg-gray-800 rounded-lg outline-none focus:ring-2 focus:ring-[var(--accent)]"
@@ -44,14 +44,14 @@ const ContactForm: React.FC = () => {
           <input
             type="email"
             name="email"
-            placeholder="Your Email"
+            placeholder="your email"
             value={formData.email}
             onChange={handleChange}
             className="w-full p-3 bg-gray-800 rounded-lg outline-none focus:ring-2 focus:ring-[var(--accent)]"
           />
           <textarea
             name="message"
-            placeholder="Your Message"
+            placeholder="your message"
             rows={5}
             value={formData.message}
             onChange={handleChange}
@@ -63,7 +63,7 @@ const ContactForm: React.FC = () => {
             type="submit"
             className="w-full py-3 bg-[#c8a2c8] text-black font-semibold rounded-lg hover:bg-[var(--accent)] transition-all"
           >
-            Send Message
+            send message
           </motion.button>
         </motion.form>
       </ScrollReveal>

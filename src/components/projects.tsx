@@ -3,20 +3,21 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import lynchat from "../images/re.png";
 import ScrollReveal from "./scrollReveal";
 
 const projects = [
   {
     id: 1,
-    title: "Lynchat",
+    title: "lynchat",
     description: "real-time websocket chatbot with express + socket.io backend",
     tech: "Next.js • Node.js • Express • Socket.io • TypeScript",
-    image: "/images/lynchat.jpg",
+    image: lynchat,
     link: "https://github.com/lynettehemingway/lynchat",
   },
   {
     id: 2,
-    title: "Pantry Management",
+    title: "pantry management",
     description: "inventory tracker with firebase auth and realtime database",
     tech: "React • Firebase • TailwindCSS • JavaScript",
     image: "/images/pantry.jpg",
@@ -24,7 +25,7 @@ const projects = [
   },
   {
     id: 3,
-    title: "Centsible",
+    title: "centsible",
     description: "personal finance tracker gamified with progress goals",
     tech: "React Native • Expo • TypeScript • Redux Toolkit",
     image: "/images/centsible.jpg",
@@ -33,14 +34,14 @@ const projects = [
   {
     id: 4,
     title: "uweather ☁",
-    description: "Weather tracking platform for year-by-year comparisons to highlight global warming trends.",
+    description: "weather tracking platform for year-by-year comparisons to highlight global warming trends",
     tech: "C++",
     image: "/images/uweather.jpg",
     link: "https://github.com/NivedhaaS/uweather",
   },
   {
     id: 5,
-    title: "GIS-COVID",
+    title: "gis-covid",
     description: "choropleth mapping of covid-19 data using arcgis js api",
     tech: "HTML • JavaScript • ArcGIS API • CSS",
     image: "/images/giscovid.jpg",
@@ -48,9 +49,9 @@ const projects = [
   },
   {
     id: 6,
-    title: "CostCompass",
-    description: "GIS-powered platform for real-time cost-of-living insights using Google Maps & Census API",
-    tech: "JavaScript, Python, NodeJS, Flask, GIS",
+    title: "costcompass",
+    description: "gis-powered platform for real-time cost-of-living insights using google maps & census api",
+    tech: "JavaScript • Python • NodeJS • Flask • GIS",
     image: "/images/costcampus.jpg",
     link: "https://github.com/CloudRazerz/CostCompass",
   },
